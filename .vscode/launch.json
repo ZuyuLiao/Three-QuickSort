@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSortMidPivot",
+            "request": "launch",
+            "mainClass": "QuickSortMidPivot",
+            "projectName": "Three-QuickSort_7aa0ffc1"
+        }
+    ]
+}

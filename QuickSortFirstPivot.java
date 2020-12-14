@@ -10,19 +10,19 @@ class QuickSortFirstPivot {
     }
 
     public static int partition(int[] nums, int low, int high){
-        int pivot = low-1;
-        for(int j = low; j < high;j++){
-            if(nums[j] < nums[high]){
+        int pivot = low;
+        for(int j = low+1; j <= high;j++){
+            if(nums[j] <= nums[low]){
                 pivot++;
                 int temp = nums[pivot];
                 nums[pivot] = nums[j];
                 nums[j] = temp;
             }
         }
-        int temp = nums[pivot+1];
-        nums[pivot+1] = nums[high];
-        nums[high] = temp;
-        return pivot+1;
+        int temp = nums[pivot];
+        nums[pivot] = nums[low];
+        nums[low] = temp;
+        return pivot;
     }
 
     public static void main(String[] args) {
